@@ -26,6 +26,11 @@ public class stepsDefinition {
         url = QAProps.getValue("url");
         driver.get(url);
     }
+    @Given("is able to navigate")
+    public void is_able_to_navigate() {
+        url = QAProps.getValue("url");
+        driver.get(url);
+    }
 
     @Then("the user enter the product name")
     public void the_user_enter_the_product_name() {
